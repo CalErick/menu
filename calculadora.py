@@ -39,9 +39,3 @@ class calCientifica(Calculadora):
     def areaCuadrado(self,lado):
         return lado**2
         
-# obj=calEstandar(4,2)
-# obj.multiplicacion()
-#obj= calCientifica(2,3,5)
-#print(obj.areaCirculo())
-ob= calEstandar()
-print(ob.valorAbsoluto(1))
