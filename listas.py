@@ -56,22 +56,4 @@ class Listas(Intermedio):
         list = []
         for i in tupla:
             list.append(i)
-        return list
-
-               
-   
-# obj = Listas(["Ecuador",
-#                 "España",
-#                 "Italia",
-#                 "Inglaterra",
-#                 "Francia"])
-obj = Listas(["hola",5,4,6,"hola",7,8,9,"hola",7])
-# obj.presentarLista()
-# obj.buscarLista("inglaterra")
-# obj.listaFactorial()
-# obj.listaPrimo()
-# obj.listaNotas([{"Miguel":8 , "Andres":7 }])
-
-# print(obj.insertarLista(posicion=1,valor="yep"))
-tupla=(4,5,"hola mundo","mi tarea",14)
-print(obj.tuplalista(tupla))
+        return list   
