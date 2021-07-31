@@ -25,11 +25,11 @@ while opc != '5':
             os.system("cls")
             menu1 = Menu('//--MENU CALCULADORA--//', ['1) Suma', '2) Resta', '3) Multiplicacion', '4) Division', '5) Exponente', '6) valor absoluto', '7) circunferencia', '8) area circulo','9) Area cuadrado', '10) Salir'])
             opc1 = menu1.menu()
-            if opc1 == '1':
+           if opc1 == '1':
                 os.system("cls")
                 print('Suma')
-                n1=int(input("Ingrese el primer numero: "))
-                n2=int(input("Ingrese el segundo numero: "))
+                n1=float(input("Ingrese el primer numero: "))
+                n2=float(input("Ingrese el segundo numero: "))
                 obj1=calCientifica(n1,n2)
                 print(("{} + {} = {}").format(n1,n2,obj1.suma()))
                 input("Presione una tecla para continuar...")
@@ -37,8 +37,8 @@ while opc != '5':
             if opc1 == '2':
                 os.system("cls")
                 print('Resta')
-                n1=int(input("Ingrese el primer numero: "))
-                n2=int(input("Ingrese el segundo numero: "))
+                n1=float(input("Ingrese el primer numero: "))
+                n2=float(input("Ingrese el segundo numero: "))
                 obj1=calCientifica(n1,n2)
                 print(("{} - {} = {}").format(n1,n2,obj1.resta()))
                 input("Presione una tecla para continuar...")
@@ -46,8 +46,8 @@ while opc != '5':
             if opc1 == '3':
                 os.system("cls")
                 print('Multiplicacion')
-                n1=int(input("Ingrese el primer numero: "))
-                n2=int(input("Ingrese el segundo numero: "))
+                n1=float(input("Ingrese el primer numero: "))
+                n2=float(input("Ingrese el segundo numero: "))
                 obj1=calCientifica(n1,n2)
                 print(("{} * {} = {}").format(n1,n2,obj1.multiplicacion()))
                 input("Presione una tecla para continuar...")
@@ -55,8 +55,8 @@ while opc != '5':
             if opc1 == '4':
                 os.system("cls")
                 print('Division')
-                n1=int(input("Ingrese el primer numero: "))
-                n2=int(input("Ingrese el segundo numero: "))
+                n1=float(input("Ingrese el primer numero: "))
+                n2=float(input("Ingrese el segundo numero: "))
                 obj1=calCientifica(n1,n2)
                 print(("{} / {} = {}").format(n1,n2,obj1.division()))
                 input("Presione una tecla para continuar...")
@@ -64,8 +64,8 @@ while opc != '5':
             if opc1 == '5':
                 os.system("cls")
                 print('Exponente')
-                n1=int(input("Ingrese el primer numero: "))
-                n2=int(input("Ingrese el segundo numero: "))
+                n1=float(input("Ingrese el primer numero: "))
+                n2=float(input("Ingrese el segundo numero: "))
                 obj1=calEstandar(n1,n2)
                 print(("{} ** {} = {}").format(n1,n2,obj1.exponente()))
                 input("Presione una tecla para continuar...")
@@ -73,7 +73,7 @@ while opc != '5':
             if opc1 == '6':
                 os.system("cls")
                 print('Valor Absoluto')
-                n=int(input("Ingrese un numero: "))
+                n=float(input("Ingrese un numero: "))
                 obj1=calEstandar()
                 print(("el numero es :{} , en valor absoluto: {}").format(n,obj1.valorAbsoluto(n)))
                 input("Presione una tecla para continuar...")
